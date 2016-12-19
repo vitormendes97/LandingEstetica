@@ -20,6 +20,24 @@ html,body
 	    border: none;
 }
 
+.carousel-indicators {
+	position: relative !important;
+	top:463px;
+}
+
+.carousel-caption {
+	position: relative !important;
+	right: 0%;
+	left: 0%;
+}
+
+.carousel-text{
+	font-size: 16px;
+	color:black;
+	padding-top: 5%;
+	text-shadow: none;
+}
+
 .logo {
 	width: 150px;
     margin: 8px;
@@ -82,15 +100,15 @@ html,body
 }
 
 .glyphicon, .glyphicon-chevron-left , .glyphicon-chevron-left {
-	color: #25ab87;
+	color: #60a4e1;
 }
 
  li .active {
-	background-color:  #25ab87 !important;
+	background-color:  #60a4e1 !important;
 }
 
 .carousel-indicators li {
-	border-color: #25ab87 !important
+	border-color: #60a4e1 !important
 }
 
 @media only screen and (min-width: 1041px) {
@@ -109,8 +127,8 @@ html,body
 	margin-left: 99%;
 }
 
-#navbar-text-red {
-	 background: #25ab87;
+#navbar-text-blue {
+	 background: #60A4E1;
     border-radius: 5px;
     color: white;
     padding-top: 6px;
@@ -158,11 +176,15 @@ html,body
 }
 
 .middle-text {
-	padding-top: 9%;
+	padding-top: 8.3%;
 	text-align: center;
 	color: #fff;
 	font-size: 20px;
 	font-weight: bold;
+}
+
+.item-spacing{
+	padding: 5% 0% 10% 0%;
 }
 
 .row-mg-tp-4 {
@@ -170,7 +192,6 @@ html,body
 }
 
 form input[type=text] {
-	width: 64%;
 	margin:  0 auto;
 	margin-top: 2%;
 	margin-bottom: 2%;
@@ -189,7 +210,7 @@ form p {
 
 form a {
 	text-decoration: none;
-	color: #25ab87;
+	color: #60A4E1;
 }
 
 .item-centralize {
@@ -203,13 +224,13 @@ form a {
 }
 
 #btn-now {
-	background-color: #25ab87;
+	background-color: #60A4E1;
 	color: #fff;
-	font-size: 17px;
-	font-weight: bold;
-	border : none;
-	padding-right: 20%;
-	padding-left: 20%;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    padding-right: 32%;
+    padding-left: 32%;
 }
 
 
@@ -223,12 +244,13 @@ form a {
    background-image: url('../img/background-6.jpg');
    background-repeat: no-repeat;
    background-size: 100%;
-   margin-top: 100px;
+   margin-top: 85px;
    color: #fff;
 }
 
 #tec h2 {
 	margin-bottom: 0;
+	font-size: 28px;
 }
 #tec h3 {
 	font-size: 18px;
@@ -241,6 +263,7 @@ form a {
 
 #tecnologia-text {
 	margin-top: 5%;
+	color:#504646;
 }
 
 .agroup-text {
@@ -320,7 +343,7 @@ form a {
 }
 
 #transparent-bg-black{
-	background-color: rgba(0, 0, 0 , 0.7);
+	background-color: rgba(255, 255, 255 , 0.7);
 	color:  #fff;
 }
 
@@ -390,19 +413,21 @@ hr {
 	line-height: 1px;
 }
 
-.btn-custom-red {
-	background-color: #25ab87 !important;
+.btn-custom-blue {
+	background-color: #60a4e1 !important;
 	color: #fff !important;
 	width: 171px;
 	height: 54px;
+	border:none;
+	border-radius: 0;
 }
 
-.btn-custom-red:active ,.btn-custom-red:focus , .btn-custom-red:target {
+.btn-custom-blue:active ,.btn-custom-blue:focus , .btn-custom-blue:target {
 	background-color: #fff !important;
 	color: #000 !important;
 	width: 171px;
 	height: 54px;
-	border: 2px solid#753B39 !important;
+	border: 2px solid #60a4e1 !important;
 	outline: none !important;
 }
 
@@ -468,10 +493,11 @@ hr {
 }
 
 #trial {
-	background: #25ab87 !important;
+	background: #60A4E1 !important;
 	color: #fff;
-	font-weight: bold;
-	font-size: 19px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
 	padding: 0.7% 5% 0.7% 5%;
 }
 
@@ -482,18 +508,20 @@ hr {
 #footer h2 {
 	color: #000;
 	font-weight: 900;
+	text-align: left;
 }
 
 #footer h3 {
-	padding-left: 27%;
+	/*padding-left: 27%;*/
     font-size: 15px;
-    padding-right: 157px;
+    /*padding-right: 157px;*/
     text-align: justify;
 }
 
 #footer p {
 	padding-right: 13%;
 	color: #000;
+	text-align: left;
 }
 
 #footer2 {
@@ -527,11 +555,30 @@ hr {
 	max-width: 920px;
 }
 
+.icon_distance div.col-md-12:nth-child(2) {
+	margin-top: 19%;
+}
 
+.icon_distance div.col-md-12:nth-child(3) {
+	margin-top: 13%;
+}
 
+.funcinalidades_gestao {
+	height: 350px;
+}
+
+.gestaop1 {
+	font-size: 20px;
+}
+
+.funcinalidades_gestao > dl > dt > img  {
+	margin-bottom: 10px;
+}
 
 
 @media only screen and (min-width: 250px) and (max-width: 767px)  {
+	
+
 
 	#logo {
 		margin: 0 auto;
@@ -609,8 +656,13 @@ hr {
  	}
 
 	#faixa1{
-		background-size: 100%;
+		background-size: 91%;
 		height: 91px;
+	}
+
+	#btn-now {
+	    padding-right: 29%;
+	    padding-left: 29%;
 	}
 
 	form input[type=text] {
@@ -630,7 +682,8 @@ hr {
 		text-align: center;
 	}
 	#tec h3 {
-		font-size: 13px;
+		font-size: 16px;
+		padding-top: 5%;
 	}
 	.tec-img {
 		margin: 0 auto;
@@ -641,7 +694,11 @@ hr {
 		display: block;
 		margin: 0 auto;
 	}
+	
+	#tec h2 {
+	    font-size: 23px;
 
+	}
 	.gestao_text p  {
 		text-align: center;
 		padding: 0 !important;
@@ -717,7 +774,8 @@ hr {
 	}*/
 
 	#trial {
-		padding: 3.7% 5% 3.7% 5%;
+		padding: 2.7% 3% 2.7% 5%;
+    	font-size: 16px;
 	}
 
 	.btn-custom-red {
@@ -788,14 +846,68 @@ hr {
     	display: none;
     }
 
+    .carousel-text {
+	    font-size: 14px;
+	    color: black;
+	    padding-top: 5%;
+	}
+
+	.glyphicon, .glyphicon-chevron-left, .glyphicon-chevron-left {
+    	margin-top: -157% !important;
+	}
+	
+	.carousel-indicators {
+		display: none;
+	}
+	.btn-custom-blue {
+		width: 100px;
+	}
+	.btn-custom-blue:active ,.btn-custom-blue:focus , .btn-custom-blue:target {
+		width: 100px;
+		height: 54px;
+		padding:0;
+	}
+
+	.xs-center{
+		text-align: center;
+	}
+
+	.funcinalidades_gestao {
+    	height: 380px;
+	}
+
+	.text-justify-mobile{
+		text-align: justify;
+	}
+
+	.item-spacing > div > h3 {
+		font-size: 19px;
+	}
+
+	#footer h2 {
+	    text-align: center;
+	}
+
+	#footer p {
+    	text-align: center;
+	}
 }
 
 
 @media only screen and (min-width: 767px) and (max-width: 991px){
+	
+	.mg-tp-10 {
+		margin-top: 10px;
+	}
+
+	#financeiro-div-mobile {
+		margin-top: 8%;
+	}
 
 	#finger {
-		padding-top: 65%;
+		padding-top: 69%;
 		display: block;
+		width: 109%;
 	}
 
 	#tec {
@@ -834,6 +946,7 @@ hr {
 
 	.middle-text {
     	padding-top: 7.5%;
+    	font-size: 26px;
 	}
 
 	.planos {
@@ -864,6 +977,7 @@ hr {
 
 	   padding : 2.7% 0% 2.7% 0%;
     	width: 97%;
+    	font-size: 20px;
 	}
 
 	  #line-bord{
@@ -909,13 +1023,44 @@ hr {
 		padding-right: 4%;
 		padding-top: 3%;
 	}
+
+	.relation-marketing {
+    	background-position: -280px;
+	}
+
+	#faixa1 {
+		background-size: 77%;
+		margin: 12% 0% 8% 0%;
+	}
+
+	.funcinalidades_gestao {
+    	height: 289px;
+	}
+
+
+	#faixa1 {
+	    background-size: 84%;
+	}
+
+	#footer h3 {
+	    padding-left: 0%;
+	    padding-right: 0px;
+	}
+	form p {
+		text-align: center;
+	}
+
+	#btn-now {
+	    padding-right: 29%;
+	    padding-left: 29%;
+	}
 }
 
 
 @media only screen and (min-width: 1200px) and (max-width: 3000px){
 
-		#footer h3 {
+	/*	#footer h3 {
 		padding-left: 28%;
 		padding-right: 27%;
-	}
+	}*/
 }
